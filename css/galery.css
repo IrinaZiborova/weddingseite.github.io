@@ -1,0 +1,23 @@
+
+.galery{
+	width: 100vw;
+	overflow: hidden;
+}
+.galery a{
+	padding: 8px;
+}
+
+/*.galery a.hidden{
+	display: none;
+}*/
+
+.galery img {
+	transition: 1s;
+	width: calc((100vw - 80px)/5);
+	image-orientation: from-image;
+}
+
+.galery img:hover{
+	transform: scale(1.1);
+}
+
