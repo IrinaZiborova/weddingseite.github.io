@@ -199,13 +199,16 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 .stay img {
   width: 100%;
 }
-.stay-text{
-  padding: 20px;
-}
 
 .video{
   height: 450px;
   overflow: hidden;
+}
+
+.dresscode-colors{
+  box-shadow: none;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .photo {
@@ -217,6 +220,11 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 }
 table{
   width: 600px;
+}
+
+.bottom-border{
+  border-bottom-color: var(--creme);
+border-bottom: 0.5px solid;
 }
 
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -237,6 +245,9 @@ footer p{
 
 
 @media (max-width: 767px){
+  .mob-column{
+    flex-direction: column;
+  }
   .mb-mob-60{
     margin-bottom: 60px;
   }
@@ -263,6 +274,10 @@ footer p{
     width: 20px;
     height: 20px;
   }
+
+  .stay-text{
+  padding: 20px;
+}
 
  .wrap{
   margin: 0 20px;
