@@ -21,9 +21,11 @@ body{
 @font-face{
     font-family: 'Playfair';
     src: url('../fonts/PlayfairDisplay-Regular.ttf');
+    /*src: url('../fonts/Audrey_Normal.otf');*/
 }
 @font-face{
     font-family:  'Mr';
+    /*src: url('../fonts/North_Wave.otf');*/
     src: url('../fonts/MrDeHaviland-Regular.ttf');
 }
 
@@ -39,6 +41,7 @@ h3 {
   display: block;
   color: var(--black);
   letter-spacing: 7px;
+  margin-left: 7px;
 }
 p, a, td, th {
   font-family: 'OpenSans-Light';
@@ -110,13 +113,16 @@ justify-content: center;
 .mb-60 {
   margin-bottom: 60px;
 }
+.mb-40 {
+  margin-bottom: 40px;
+}
 .centered-text{
  text-align: center;
 }
 
 .hero{
   width: 100vw;
-  height: 100vh;
+  height: 80vh;
   background-image: url(../img/3.jpg);
   background-position: center;
   background-size: cover;
@@ -145,9 +151,15 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
   background-color: var(--creme);
 }
 
+.creme-gradient{
+  width: 100vw;
+  padding: 100px;
+  background: linear-gradient(white, #EDE2D8);
+}
+
 .white {
   width: 100vw;
-  padding: 100px 0px;
+  padding: 50px 0px;
   background-color: var(--white) ;
 }
 
@@ -157,7 +169,7 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 }
 
 .logo{
-  background-image: url(../img/leave-light.png);
+  background-image: url(../img/leave-light-2.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -199,6 +211,60 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 .stay img {
   width: 100%;
 }
+.sleepingPlan.one::before{
+ content: "1. Stock";
+ position: absolute;
+  top:-35px;
+  left: 3px;
+  font-size: 60px;
+  font-family: "Mr";
+}
+.sleepingPlan.two::before{
+  content: "2. Stock";
+  position: absolute;
+  top:-35px;
+  left: 3px;
+  font-size: 60px;
+  font-family: "Mr";
+}
+.sleepingPlan.tree::before{
+  content: "3. Stock";
+  position: absolute;
+  top:-35px;
+  left: 3px;
+  font-size: 60px;
+  font-family: "Mr";
+}
+
+.sleepingPlan.one-ru::before{
+ content: "1. Floor";
+ position: absolute;
+  top:-35px;
+  left: 3px;
+  font-size: 60px;
+  font-family: "Mr";
+}
+.sleepingPlan.two-ru::before{
+  content: "2. Floor";
+  position: absolute;
+  top:-35px;
+  left: 3px;
+  font-size: 60px;
+  font-family: "Mr";
+}
+.sleepingPlan.tree-ru::before{
+  content: "3. Floor";
+  position: absolute;
+  top:-35px;
+  left: 3px;
+  font-size: 60px;
+  font-family: "Mr";
+}
+
+.sleepingPlan{
+  padding: 8px;
+}
+
 
 .video{
   height: 450px;
@@ -324,4 +390,4 @@ footer p{
   text-align: center;
 }
 }
-/* END */
+  /* END */
