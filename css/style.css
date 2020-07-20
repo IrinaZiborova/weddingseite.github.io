@@ -5,6 +5,7 @@
     --black: #222;
     --white: #fff;
     --creme: #EDE2D8;
+    --gray: #f7f4f4;
     --creme-2: #976C49;
 }
 
@@ -36,6 +37,11 @@ h1 {
   margin-top: 150px;
   font-size: 100px;
 }
+
+h2 {
+  font-family: 'Mr';
+  color: var(--black);
+}
 h3 {
   font-family: 'Playfair';
   display: block;
@@ -62,25 +68,25 @@ img, .image-wrap{
 }
 
 nav {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 10;
-  padding: 5px 0px;
+  padding: 10px 0px;
+  min-height: 70px;
   top: 0px;
   width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(255,255,255,0.7);
+  background-color: var(--gray);
   -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px); 
+  backdrop-filter: blur(2px);
 }
 nav a {
   display: block;
-  line-height: 2;
-  font-size: 12px;
+  font-size: 14px;
   margin-right: 20px;
   font-weight: 600;
+  height: 100%;
 }
 
 a:hover {
@@ -122,25 +128,26 @@ justify-content: center;
 
 .hero{
   width: 100vw;
-  height: 80vh;
-  background-image: url(../img/3.jpg);
-  background-position: center;
+  height: calc(100vh - 70px);
+  background-image: url(../img/Cover2.jpg);
+  background-position: bottom;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
+
 .hero-text{
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 .hero-text h1, .hero-text p{
 color: var(--white) !important;
-text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 }
 .hero-text .button{
   background-color: rgba(255,255,255,0.7);
   -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px); 
+  backdrop-filter: blur(2px);
   border: 1px solid transparent;
 }
 
@@ -148,7 +155,9 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 .creme {
   width: 100vw;
   padding: 100px 0px;
-  background-color: var(--creme);
+  background-color: var(--gray);
+  background-image: url(../img/Flower_white.png);
+  background-position: center;
 }
 
 .creme-gradient{
@@ -159,7 +168,7 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 
 .white {
   width: 100vw;
-  padding: 50px 0px;
+  padding: 100px 0px;
   background-color: var(--white) ;
 }
 
@@ -176,7 +185,7 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
 }
 
 .wedding-day{
-  padding-bottom: 250px;
+  padding-bottom: 308px;
 }
 .about-villa{
   position: relative;
@@ -186,8 +195,8 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
   width: calc(100% - 40px);
   max-width: 800px;
   height: 500px;
-  top: -250px;
-  background-image: url("../img/villa1.jpg");
+  top: -308px;
+  background-image: url("../img/villa3.png");
   background-position: center;
   background-size: 100%;
   background-size: cover;
@@ -281,8 +290,8 @@ text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
   padding-bottom: 40px !important ;
 }
 
-.rsvp p {   
-    font-family: 'OpenSans-Light';    
+.rsvp p {
+    font-family: 'OpenSans-Light';
 }
 table{
   width: 600px;
@@ -381,6 +390,7 @@ footer p{
   nav.active{
     display: block;
     transform: none;
+    position: fixed;
     top: 0;
     left: 0;
     box-shadow: 0px 4px 14px rgb(0,0,0, 0.5);
